@@ -1,0 +1,103 @@
+
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */
+
+/* ---------------------- CONTAINER QUE SEGURA O MENU ---------------------- */
+/* Este container mantém o menu no layout e garante que ele se expanda corretamente */
+.container-menu {
+    display: flex;               /* Usa flexbox para alinhar o conteúdo */
+    justify-content: flex-end;   /* Alinha o menu à direita */
+    flex-grow: 1;                /* Faz o container crescer conforme o espaço disponível */
+}
+
+/* ---------------------- LISTA DE ITENS DO MENU ---------------------- */
+/* Estiliza a lista principal de itens do menu */
+.menu {
+    list-style: none;     /* Remove os marcadores da lista */
+    margin: 0;            /* Remove margens padrões */
+    padding: 0;           /* Remove padding padrão */
+    display: flex;        /* Usa flexbox para alinhar os itens horizontalmente */
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+}
+
+/* ---------------------- ITENS DA LISTA ---------------------- */
+/* Cada item do menu */
+.menu li {
+    list-style: none;    /* Remove marcadores dos itens */
+    position: relative;  /* Necessário para posicionar os submenus dentro de cada item */
+}
+
+/* ---------------------- LINKS DO MENU ---------------------- */
+/* Estiliza os links do menu */
+.menu li a {
+    color: #FFFFFF;         /* Cor branca para contraste com o fundo escuro */
+    text-decoration: none;  /* Remove o sublinhado padrão dos links */
+    padding: 5px 10px;      /* Espaçamento interno nos links */
+    display: block;         /* Faz o link ocupar toda a área do item */
+    font-weight: 500;       /* Deixa o texto um pouco mais forte */
+    transition: background 0.3s, color 0.3s; /* Suaviza as mudanças de cor e fundo ao passar o mouse */
+}
+
+/* ---------------------- EFEITO HOVER NOS LINKS PRINCIPAIS ---------------------- */
+/* Define o estilo quando o link é sobrevoado */
+.menu li a:hover {
+    background: #333;       /* Fundo escuro ao passar o mouse */
+    color: #faf9f4;         /* Cor amarela ao passar o mouse */
+    text-shadow: 0px 0px 5px #fff; /* Adiciona um brilho sutil ao texto */
+    border-radius: 3px;     /* Cantos arredondados */
+}
+
+/* ---------------------- SUBMENU (DROPDOWN) ---------------------- */
+/* Estilo do submenu (dropdown) */
+.menu li ul {
+    position: absolute;           /* Posiciona o submenu de forma absoluta */
+    top: 100%;                    /* Coloca o submenu abaixo do item de menu */
+    left: 0;                       /* Alinha o submenu à esquerda do item */
+    background-color: #222;       /* Fundo escuro para o submenu */
+    display: none;                 /* Inicialmente, o submenu está oculto */
+    margin: 0;                     /* Remove margens padrão */
+    padding: 0;                    /* Remove padding */
+    border-radius: 4px;            /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para o submenu */
+    z-index: 10;                  /* Garante que o submenu fique acima de outros itens */
+}
+
+/* ---------------------- MOSTRAR SUBMENU AO PASSAR O MOUSE ---------------------- */
+/* Exibe o submenu quando o item do menu for sobrevoado */
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;               /* Exibe o submenu */
+}
+
+/* ---------------------- ITENS DO SUBMENU ---------------------- */
+/* Estilo dos itens dentro do submenu */
+.menu li ul li {
+    border-bottom: 1px solid #444; /* Borda entre os itens */
+    width: 180px;                  /* Define uma largura fixa para os itens do submenu */
+}
+
+/* ---------------------- LINKS DO SUBMENU ---------------------- */
+/* Estilo dos links dentro do submenu */
+.menu li ul li a {
+    color: #FFF;                   /* Cor branca para contraste */
+    background-color: transparent; /* Fundo transparente para o submenu */
+}
+
+/* ---------------------- EFEITO HOVER NO SUBMENU ---------------------- */
+/* Estilo ao passar o mouse sobre os links do submenu */
+.menu li ul li a:hover {
+    background-color: #555;        /* Fundo escuro no hover */
+    color: #FFD700;                /* Cor amarela no hover */
+}
+
+
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */

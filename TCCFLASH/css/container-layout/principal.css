@@ -1,0 +1,61 @@
+
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */
+
+/* importando estilo de fonte para os textos, fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ---------------------- ESTRUTURA PARA O FOOTER FICAR NO FINAL ---------------------- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    flex: 1; /* Faz o conteúdo crescer e empurrar o footer pra baixo */
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-principal {
+    width: 80%;
+    max-width: 1200px; /* opcional: limite máximo de largura */
+    margin: 0 auto; /* centraliza o container */
+    padding: 20px 0; /* espaço interno vertical */
+    box-sizing: border-box; /* inclui padding na largura total */
+}
+
+@media (max-width: 600px) {
+    .container-principal {
+        width: 95%;
+    }
+}
+
+
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */
+
+
+
+
+
+

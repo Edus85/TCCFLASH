@@ -1,0 +1,8 @@
+/* mini reset css  asterisco representa todas as tags*/
+* {
+    margin: 0;
+    padding: 0;
+    /* com box-sizing o valor do padding não é atribuido ao elemento */
+    box-sizing: border-box;
+}
+

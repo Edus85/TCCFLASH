@@ -1,0 +1,85 @@
+
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */
+
+/* ---------------------- CONFIGURAÇÕES GERAIS ---------------------- */
+/* Garante que padding e borda não ultrapassem o tamanho total dos elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* ---------------------- CONTAINER DO CARROSSEL ---------------------- */
+/* Define o tamanho do carrossel de forma proporcional à tela, centralizado e responsivo */
+.carrossel {
+    position: relative; /* Necessário para posicionar os botões dentro */
+    width: 80%;          /* Ocupa 80% da largura disponível */
+    max-width: 800px;    /* Limita a largura máxima para telas muito grandes */
+    margin: 0 auto;      /* Centraliza horizontalmente */
+    aspect-ratio: 16 / 9;/* Mantém proporção de 16:9 (largura:altura) */
+    max-height: 500px;   /* Evita que fique muito alto em telas grandes */
+    overflow: hidden;    /* Esconde qualquer conteúdo que ultrapasse os limites */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* ---------------------- CONTAINER DOS SLIDES ---------------------- */
+/* Coloca as imagens em linha para fazer o efeito de "slide horizontal" */
+.slides {
+    display: flex;                          /* Imagens lado a lado */
+    transition: transform 0.5s ease-in-out; /* Animação suave entre os slides */
+    width: 100%;                            /* Ocupa toda a largura do carrossel */
+}
+
+/* ---------------------- ESTILO DAS IMAGENS ---------------------- */
+/* Ajusta as imagens para preencherem os slides sem distorcer */
+.slides img {
+    flex: 0 0 100%;     /* Cada imagem ocupa 100% da largura do carrossel */
+    width: 100%;        /* Garante largura total */
+    height: 100%;       /* Acompanha a altura do carrossel */
+    object-fit: cover;  /* Corta e preenche a imagem mantendo proporção */
+    max-width: 100%;    /* Garante que não estoure o container */
+}
+
+/* ---------------------- BOTÕES DE NAVEGAÇÃO ---------------------- */
+/* Estilização dos botões para passar os slides */
+.prev, .next {
+    position: absolute;             /* Permite posicionar livremente no carrossel */
+    top: 50%;                       /* Centraliza verticalmente */
+    transform: translateY(-50%);    /* Corrige o centro exato */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    color: white;                   /* Cor do ícone/fonte */
+    border: none;                   /* Remove a borda padrão */
+    padding: 10px;                  /* Espaçamento interno */
+    cursor: pointer;               /* Muda o cursor ao passar */
+    z-index: 1;                     /* Fica acima das imagens */
+    border-radius: 50%;            /* Formato circular */
+}
+
+/* Botão da esquerda */
+.prev {
+    left: 10px;
+}
+
+/* Botão da direita */
+.next {
+    right: 10px;
+}
+
+/* ---------------------- RESPONSIVIDADE EXTRA PARA TELAS MENORES ---------------------- */
+/* Em dispositivos menores, o carrossel ocupa quase toda a tela e usa proporção 1:1 */
+@media (max-width: 500px) {
+    .carrossel {
+        width: 95%;             /* Aproveita melhor a tela pequena */
+        aspect-ratio: 1 / 1;    /* Torna o carrossel quadrado */
+    }
+}
+
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */

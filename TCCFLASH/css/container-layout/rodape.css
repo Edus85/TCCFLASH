@@ -1,0 +1,43 @@
+/* ---------------------- ESTILIZAÇÃO DO FOOTER ---------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* ---------------------- CONTAINER PRINCIPAL DO FOOTER ---------------------- */
+.container-rodape {
+    display: flex; /* Ative o flex de volta */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------------------- LADO ESQUERDO E DIREITO ---------------------- */
+.rodape-esquerda,
+.rodape-direita {
+    text-align: center;
+}
+
+/* ---------------------- ESTILO DO LINK DE EMAIL ---------------------- */
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* ---------------------- RESPONSIVO ---------------------- */
+@media (max-width: 768px) {
+    .container-rodape {
+        flex-direction: column;
+    }
+}
