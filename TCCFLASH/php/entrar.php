@@ -89,7 +89,7 @@
                 .body_box {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: center;        
                     min-height: 100vh;
                     background-color: white;
                     
@@ -142,9 +142,7 @@
         <!-- MESMO CASO DO MENU, MANTER NA TAG BODY, BODY É O CORPO, TEM QUE TER TODO O CONTEÚDO -->
         <footer>
             
-            <style>
 
-            </style>
             <div class="container-rodape">
                 <div class="rodape-esquerda">
                     <p>Tel: (11) 7070-7070</p>

@@ -1,0 +1,39 @@
+
+/* Container do campo de busca */
+.container-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+/* Input do campo de busca */
+.input-pesquisa {
+    padding: 5px 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+}
+
+.btn-pesquisa {
+    padding: 5px 12px;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn-pesquisa:hover, .btn-pesquisa.destaque:hover {
+    background-color: #333;
+    color: white;
+}
+
+.btn-pesquisa.destaque {
+    font-weight: bold;
+    background-color: white;
+    color: #333;
+}
+/* RECOMENDO VISUALIZAREM O MATERIAL DE FLEXBOX DISPONÍVEL EM: 
+https://github.com/CleitonDsd/2-MOD-DS_2024/tree/main/PWII/04_Flexbox */
+

@@ -1,0 +1,76 @@
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */
+
+
+
+/* ---------------------- ESTILIZAÇÃO DO FOOTER ---------------------- */
+footer {
+    background-color: #333;        /* Cor de fundo escura */
+    color: white;                  /* Texto branco para contraste */
+    padding: 20px 0;               /* Espaçamento no topo e no fundo */
+    text-align: center;            /* Alinha o conteúdo ao centro */
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* ------------------- PERMITE QUE O RODAPÉ FIQUE NO FIM DA PÁGINA ------------*/
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    position: relative;
+    top: 100px
+  }
+  
+  main {
+    flex: 2.5;
+}
+
+
+/* ---------------------- CONTAINER PRINCIPAL DO FOOTER ---------------------- */
+.container-rodape {
+    display: flex;                 /* Usa flexbox para alinhar os itens */
+    flex-direction: column;        /* Alinha os itens em uma coluna */
+    justify-content: center;       /* Centraliza os itens verticalmente */
+    align-items: center;           /* Centraliza os itens horizontalmente */
+    max-width: 1200px;             /* Limita a largura máxima */
+    margin: 0 auto;                /* Centraliza o footer */
+    padding: 0 20px;               /* Espaçamento nas laterais */
+}
+
+/* ---------------------- LADO ESQUERDO DO FOOTER ---------------------- */
+.rodape-esquerda,
+.rodape-direita {
+    text-align: center;            /* Centraliza o texto nos dois lados */
+}
+
+/* ---------------------- ESTILO DO LINK DE EMAIL ---------------------- */
+footer a {
+    color: #FFD700;                /* Cor amarela para o link de email */
+    text-decoration: none;         /* Remove o sublinhado */
+    transition: color 0.3s;         /* Suaviza a transição de cor */
+}
+
+footer a:hover {
+    color: #fff;                   /* Altera a cor ao passar o mouse */
+}
+
+/* ---------------------- RESPONSIVIDADE PARA TELAS MENORES ---------------------- */
+@media (max-width: 768px) {
+    .container-rodape {
+        flex-direction: column;     /* Mantém os itens em coluna para telas menores */
+    }
+}
+/* 
+APROVEITE E DE UMA OLHADA NOS CONTEUDOS: 
+https://github.com/CleitonDsd/ 
+
+
+!!!!! PARA O PROJETO FINAL REMOVA O EXCESSO DE COMENTÁRIOS!!!!! */
+
+

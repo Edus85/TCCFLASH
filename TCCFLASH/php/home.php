@@ -44,7 +44,7 @@
                     <ul class="menu">
                         <li><a href="#">Locação</a>
                             <ul>
-                                <li><a href="card.php">Brinquedos</a></li>
+                                <li><a href="./card-brinquedos.php">Brinquedos</a></li>
                                 <li><a href="#">Decoração</a></li>
                                 <li><a href="#">Mesas e cadeiras</a></li>
                                 <li><a href="#">Utensílios</a></li>

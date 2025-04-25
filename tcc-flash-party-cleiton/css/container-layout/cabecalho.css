@@ -1,0 +1,30 @@
+/* RECOMENDO VISUALIZAREM O MATERIAL DE FLEXBOX DISPONÍVEL EM: 
+https://github.com/CleitonDsd/2-MOD-DS_2024/tree/main/PWII/04_Flexbox */
+
+/* Container principal do cabeçalho */
+.container-header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px; 
+    background: linear-gradient(to right, rgb(255,0,0), rgb(255,165,0));
+    font-size: 1.1rem;
+}
+
+.logo-principal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.img_logo_header {
+    width: 70px;
+}
+
+.logo-principal h2{
+    font-size: 2rem;
+    color: #ffffcc;
+}

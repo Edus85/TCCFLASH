@@ -1,0 +1,78 @@
+/* RECOMENDO VISUALIZAREM O MATERIAL DE FLEXBOX DISPONÍVEL EM: 
+https://github.com/CleitonDsd/2-MOD-DS_2024/tree/main/PWII/04_Flexbox */
+
+
+/* === Formulário Geral === */
+.cadastro {
+    background: #fff; /* Fundo branco */
+    padding: 3rem 2rem; /* Espaçamento interno */
+    border-radius: 1rem; /* Bordas arredondadas */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px; /* Largura máxima */
+    margin: 2rem auto; /* Centraliza o formulário */
+}
+
+/* === Botões de Alternância === */
+.tipo-toggle {
+    display: flex;
+    gap: 1rem; /* Espaço entre os botões */
+    margin-bottom: 2rem; /* Espaço abaixo dos botões */
+    justify-content: center; /* Centraliza os botões */
+}
+
+.tipo-toggle button {
+    padding: 0.8rem 1.5rem; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que é clicável */
+    background: #ddd; /* Cor de fundo inicial */
+    transition: 0.3s; /* Transição suave */
+}
+
+.tipo-toggle button.ativo {
+    background: rgb(255, 87, 34); /* Cor de fundo ativa */
+    color: white; /* Cor do texto */
+}
+
+/* === Labels e Inputs === */
+form label {
+    display: block; /* Exibe o label como bloco (em linha) */
+    margin-top: 1rem; /* Espaço acima do label */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 0.8rem; /* Espaçamento interno */
+    margin-top: 0.3rem; /* Espaço acima do campo */
+    border-radius: 6px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda padrão */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+}
+
+/* === Textarea (campo de descrição) === */
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    font-family: inherit; /* Usa a mesma fonte do resto do formulário */
+}
+
+/* === Select (caixa de seleção de categorias) === */
+select {
+    font-family: inherit; /* Usa a mesma fonte do restante do formulário */
+    background-color: white; /* Fundo branco */
+}
+
+/* === Botão de envio === */
+form button[type="submit"] {
+    margin-top: 2rem; /* Espaço acima do botão */
+    background: rgb(255, 87, 34); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que é clicável */
+}
+/* RECOMENDO VISUALIZAREM O MATERIAL DE FLEXBOX DISPONÍVEL EM: 
+https://github.com/CleitonDsd/2-MOD-DS_2024/tree/main/PWII/04_Flexbox */

@@ -25,12 +25,12 @@
         <!-- ESTILIZAÇÃO DO rodape -->
         <link rel="stylesheet" type="text/css" href="./../css/container-layout/rodape.css"/>
 
-        <!-- CSS DESTINADO AS CONFIGURAÇÕES PRINCIPAIS DA PÁGINA -->
-        <link rel="stylesheet" type="text/css" href="./../css/container-layout/principal.css"/>
-
+        
         <!-- --------SOBRE------ -->
         <link rel="stylesheet" type="text/css" href="./../css/container-layout/componentes/sobre.css"/>
-         
+        
+        <!-- CSS DESTINADO AS CONFIGURAÇÕES PRINCIPAIS DA PÁGINA -->
+        <link rel="stylesheet" type="text/css" href="./../css/container-layout/principal.css"/>
 
     </head>
 

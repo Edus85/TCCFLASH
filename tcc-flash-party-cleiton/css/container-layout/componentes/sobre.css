@@ -1,0 +1,132 @@
+/* RECOMENDO VISUALIZAREM O MATERIAL DE FLEXBOX DISPONÍVEL EM: 
+https://github.com/CleitonDsd/2-MOD-DS_2024/tree/main/PWII/04_Flexbox */
+
+
+/* === ESTILOS GERAIS === */
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fefaf6;
+    color: #333;
+    line-height: 1.6;   /* Define o estilo global da página: sem margem, tipografia, cor de fundo e texto */
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;     /* Define o espaçamento interno das seções e centraliza o conteúdo */    
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: rgb(255, 87, 34);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    /* Estilização padrão para títulos h2 com destaque em laranja */
+}
+
+
+/* === SEÇÃO SOBRE === */
+
+.sobre p {
+    font-size: 1.1rem;
+    text-align: justify;
+    /* Parágrafos da seção 'sobre' com tamanho maior e texto justificado */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;     /* Layout flexível para dividir texto e missão lado a lado, responsivo */
+}
+
+.texto {
+    flex: 2;
+    min-width: 300px;
+    /* Parte do texto ocupa 2x mais espaço que o card de missão */
+}
+
+
+/* === CARD MISSÃO === */
+
+.card-missao {
+    flex: 1;
+    background: linear-gradient(to right, rgb(255, 87, 34), rgb(255, 165, 0));
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    /* Cartão colorido com gradiente e sombra, visual destacado */
+}
+
+.card-missao h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    /* Título da missão com tamanho grande e espaço abaixo */
+}
+
+
+/* === SEÇÃO EQUIPE === */
+
+.equipe {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    /* Layout em linha para os cards da equipe, com espaço entre eles */
+}
+
+.card-equipe {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+    /* Cartões da equipe com visual limpo, sombra leve e animação ao hover */
+}
+
+.card-equipe:hover {
+    transform: translateY(-5px);
+    /* Efeito de levantar o card ao passar o mouse */
+}
+
+.card-equipe h4 {
+    color: rgb(255, 87, 34);
+    margin-bottom: 0.5rem;
+    /* Destaque no nome da pessoa da equipe */
+}
+
+
+/* === SEÇÃO CALL TO ACTION (CTA) === */
+
+.cta {
+    background: linear-gradient(to right, rgb(255, 87, 34), rgb(255, 165, 0));
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius:15px;
+    /* Seção final com apelo visual forte para conversão */
+}
+
+.cta h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* Título grande e branco para destaque */
+}
+
+.cta p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    /* Parágrafo centralizado com largura máxima para leitura confortável */
+}
+/* RECOMENDO VISUALIZAREM O MATERIAL DE FLEXBOX DISPONÍVEL EM: 
+https://github.com/CleitonDsd/2-MOD-DS_2024/tree/main/PWII/04_Flexbox */
