@@ -42,5 +42,4 @@ $menu = $menuObj->getMenuCompleto();
         <a href="../view/entrar.php" class="btn-pesquisa">Entrar</a>
         <a href="../view/cadastro.php" class="btn-pesquisa destaque">Cadastro</a>
     </div>
-
 </header>

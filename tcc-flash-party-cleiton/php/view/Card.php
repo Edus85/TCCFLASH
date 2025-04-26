@@ -56,7 +56,7 @@ $produtos = $produtoObj->listarPorSubcategoria($subcategoria);
                         <?php foreach ($produtos as $produto): ?>
                             <div class="product">
                                 <img src="./../../<?php echo $produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>">
-                                    
+                                  
                                 <div class="product-info">
                                     <h4 class="product-title"><?php echo $produto['nome']; ?></h4>
                                     <p class="product-price">R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></p>

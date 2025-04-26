@@ -53,7 +53,7 @@
                     </div>
 
                     <!-- Formulário de Cadastro -->
-                    <form id="form-cadastro">
+                    <form id="form-cadastro" action="" method="POST">
                         <!-- Campos PF -->
                         <div class="pf">
 
