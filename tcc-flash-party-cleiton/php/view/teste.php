@@ -82,56 +82,14 @@
                             <input type="password" id="senhaPF" name="senhaPF"  required>
                         </div>
 
-                        <!-- Campos PJ -->
-                        <div class="pj" style="display: none;">
-
-                            <label for="cnpj">CNPJ</label>
-                            <input type="text" id="cnpj" name="cnpj" required>
-
-                            <label for="razao">Razão Social</label>
-                            <input type="text" id="razao" name="razao" required>
-
-                            <label for="fantasia">Nome Fantasia</label>
-                            <input type="text" id="fantasia" name="fantasia">
-
-                            <label for="endereco">Endereço</label>
-                            <input type="text" id="endereco" name="endereco">
-
-                            <label for="complmento">Complemento</label>
-                            <input type="text" id="complemento" name="complemento">
-
-                            <label for="telefone">Telefone</label>
-                            <input type="text" id="telefone" name="telefone">
-
-                            <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email">
-
-                            <label for="senhaPJ">Senha</label>
-                            <input type="password" id="senhaPJ" name="senhaPJ"  required>
-
-                            <!-- Categorias da empresa -->
-                            <!--<label for="categoria-principal">Categoria Principal</label>
-                            <select id="categoria-principal" name="categoria-principal" required>
-                                <option value="" disabled selected>Selecione uma categoria</option>
-                                <option value="decoracao">Decoração</option>
-                                <option value="buffet">Buffet</option>
-                                <option value="animacao">Animação</option>
-                                <option value="local">Aluguel de Espaço</option>
-                                <option value="som">Som e Iluminação</option>
-                                <option value="foto-video">Foto e Vídeo</option>
-                            </select> -->
-                            
-                            <!--<label for="fantasia">Descrição</label>
-                            <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva brevemente os serviços oferecidos, ou qualquer outra informação importante."></textarea> -->
-
-                        </div>
-
+                    
                         <button type="submit">Cadastrar</button>
                     </form>
                 </section>
             </div>
         </main>
         <br>
+        
         <!-- MESMO CASO DO MENU, MANTER NA TAG BODY, BODY É O CORPO, TEM QUE TER TODO O CONTEÚDO -->
         <footer>
             <div class="container-rodape">
