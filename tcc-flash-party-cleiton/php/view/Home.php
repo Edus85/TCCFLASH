@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -32,7 +35,14 @@
     <body>
 <!-- ------------------------------------------MENU DO SITE - REMOVAM O COMENTÁRIO DEPOIS ------------------------------------------- -->
         <!-- ALUNOS DO 3° DS, seguinte, aqui no body colocamos o conteúdo da página menu e etc -->
-        <?php include '../view/Cabecalho.php'; ?>
+        <?php include '../view/Cabecalho.php';
+        $nome = $_SESSION['nome'];
+        $pos  = strpos($nome, " ");
+        $nome = substr($nome, 0, $pos);
+
+        echo"Bem vindo $nome";
+        ?>
+         
         <!-- --------------- FIM DO MENU / CABEÇALHO  ---------------------->
         <main>
             <div class="container-principal">

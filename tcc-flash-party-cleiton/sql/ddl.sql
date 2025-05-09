@@ -26,24 +26,28 @@ CREATE TABLE produto (
     FOREIGN KEY (id_subcategoria) REFERENCES subcategoria(id)
 );
 
--------------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------
 
 create table usuarios (
     id int auto_increment primary key,
+    cpf varchar(14),
     nome varchar(255) not null,
-    snome varchar(255) not null,
-    nascimento varchar(255) not null,
+    nascimento varchar(10) not null,
+    endereco varchar( 255),
+    complemento varchar(50),
+    telefone varchar(12),
     email varchar (255) not null,
-    senha varchar(32) not null
+    senha varchar(32) not null,
 );
 
 create table prestadores (
     id int auto_increment primary key,
-    pj varchar(255) not null,
-    cnpj varchar(255) not null,
-    tel varchar(255) not null,
-    ende varchar(255) not null,
-    categoria varchar(255) not null,
+    cnpj varchar(14),
+    razao varchar(100) not null,
+    fantasia varchar(100) not null,
+    endereco varchar( 255),
+    complemento varchar(50),
+    telefone varchar(12),
     email varchar (255) not null,
-    senha varchar(32) not null
+    senha varchar(32) not null,
 )

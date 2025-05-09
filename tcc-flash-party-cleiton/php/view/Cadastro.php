@@ -53,37 +53,41 @@
                     </div>
 
                     <!-- Formulário de Cadastro -->
-                    <form id="form-cadastro" action="cadastro_submit.php" method="POST">
                         <!-- Campos PF -->
                         <div class="pf">
 
-                            <label for="cpf">CPF</label>
-                            <input type="text" id="cpf" name="cpf" required>
+                            <form id="form-cadastro" action="..\controller\cadastro_submit.php" method="POST">
+                        
+                                <label for="cpf">CPF</label>
+                                <input type="text" id="cpf" name="cpf" required>
 
-                            <label for="nome">Nome Completo</label>
-                            <input type="text" id="nomePF" name="nomePF" required>
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nomePF" name="nomePF" required>
 
-                            <label for="date">Data de Nascimento</label>
-                            <input type="date" id="date" name="date">
+                                <label for="date">Data de Nascimento</label>
+                                <input type="date" id="date" name="datan">
 
-                            <label for="endereco">Endereço</label>
-                            <input type="text" id="endereco" name="endereco">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" id="endereco" name="endereco">
 
-                            <label for="complemento">Complemento</label>
-                            <input type="text" id="complemento" name="complemento">
+                                <label for="complemento">Complemento</label>
+                                <input type="text" id="complemento" name="complemento">
 
-                            <label for="telefone">Telefone</label>
-                            <input type="text" id="telefone" name="telefone">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" id="telefone" name="telefone">
 
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
 
-                            <label for="senhaPF">Senha</label>
-                            <input type="password" id="senhaPF" name="senhaPF"  required>
+                                <label for="senhaPF">Senha</label>
+                                <input type="password" id="senhaPF" name="senhaPF"  required>
+                                <button type="submit" name = "pf">Cadastrar</button>  
+                            </form>
                         </div>
 
                         <!-- Campos PJ -->
                         <div class="pj" style="display: none;">
+                        <form id="form-cadastro" action="cadastro_submit.php" method="POST">
 
                             <label for="cnpj">CNPJ</label>
                             <input type="text" id="cnpj" name="cnpj" required>
@@ -107,7 +111,7 @@
                             <input type="text" id="email" name="email">
 
                             <label for="senhaPJ">Senha</label>
-                            <input type="password" id="senhaPJ" name="senhaPJ"  required>
+                            <input type="password" id="senhaPJ"  name="senhaPJ" required>
 
                             <!-- Categorias da empresa -->
                             <!--<label for="categoria-principal">Categoria Principal</label>
@@ -124,10 +128,12 @@
                             <!--<label for="fantasia">Descrição</label>
                             <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva brevemente os serviços oferecidos, ou qualquer outra informação importante."></textarea> -->
 
-                        </div>
+                            <button type="submit" name = "pj">Cadastrar</button>
+                        </form>
+                    </div>
 
-                        <button type="submit">Cadastrar</button>
-                    </form>
+                        
+                    
                 </section>
             </div>
         </main>
