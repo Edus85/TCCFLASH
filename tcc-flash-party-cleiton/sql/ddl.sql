@@ -21,6 +21,7 @@ CREATE TABLE produto (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     preco DECIMAL(10,2) NOT NULL,
+    descricao VARCHAR(100) NOT NULL,
     imagem VARCHAR(255),
     id_subcategoria INT NOT NULL,
     FOREIGN KEY (id_subcategoria) REFERENCES subcategoria(id)

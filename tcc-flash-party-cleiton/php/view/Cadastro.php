@@ -87,7 +87,7 @@
 
                         <!-- Campos PJ -->
                         <div class="pj" style="display: none;">
-                        <form id="form-cadastro" action="cadastro_submit.php" method="POST">
+                        <form id="form-cadastro" action="..\controller\cadastro_submit.php" method="POST">
 
                             <label for="cnpj">CNPJ</label>
                             <input type="text" id="cnpj" name="cnpj" required>
