@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
 
-
-body{
-	font-size: 1.7rem;
-	font-family: 'Merriweather Sans', sans-serif;
-	background: #eeeeea;
-	color: orange;
-	padding: 4rem;
-}
-
-h2{
-	text-align: center;
-	margin-bottom: 5rem;
-	font-size: 4rem;
-}
-
 .all-products{
 	display: flex;
 	align-items: center;
