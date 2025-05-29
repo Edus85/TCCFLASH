@@ -1,4 +1,14 @@
 <?php
+
+
+session_start();
+
+if (!isset($_SESSION['nome'])) {
+    header("Location: ./../view/Entrar.php");
+    exit(); // Importante para parar a execução do script após o redirecionamento
+}
+
+
 include"..\model\Usuario.class.php";
 $con = $usuario = new Usuario();
 
