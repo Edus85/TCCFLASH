@@ -10,7 +10,7 @@ class Produto {
     // Método para listar os produtos por subcategoria
     public function listarPorSubcategoria($subcategoria) {
         // Consulta SQL para buscar produtos de acordo com a subcategoria
-        $sql = "SELECT p.nome, p.preco, p.imagem 
+        $sql = "SELECT p.nome_produto, p.valor, p.foto 
                 FROM produto p
                 JOIN subcategoria s ON p.id_subcategoria = s.id
                 WHERE s.nome = ?";

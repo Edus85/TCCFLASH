@@ -55,11 +55,11 @@ $produtos = $produtoObj->listarPorSubcategoria($subcategoria);
                     <?php if (count($produtos) > 0): ?>
                         <?php foreach ($produtos as $produto): ?>
                             <div class="product">
-                                <img src="./../../<?php echo $produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>">
+                                <img src="./../../src/servidor-imagens/img/locacao/brinquedo/<?php echo $produto['foto']; ?>" alt="<?php echo $produto['nome_produto']; ?>">
                                   
                                 <div class="product-info">
-                                    <h4 class="product-title"><?php echo $produto['nome']; ?></h4>
-                                    <p class="product-price">R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></p>
+                                    <h4 class="product-title"><?php echo $produto['nome_produto']; ?></h4>
+                                    <p class="product-price">R$ <?php echo number_format($produto['valor'], 2, ',', '.'); ?></p>
                                     <a class="product-btn" href="#">Contratar</a>
                                 </div>
                             </div>

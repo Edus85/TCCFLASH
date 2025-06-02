@@ -65,7 +65,7 @@ select {
 }
 
 /* === Botão de envio === */
-form button[type="submit"] {
+.btn {
     margin-top: 2rem; /* Espaço acima do botão */
     background: rgb(255, 87, 34); /* Cor de fundo */
     color: white; /* Cor do texto */
@@ -73,6 +73,12 @@ form button[type="submit"] {
     border: none; /* Sem borda */
     border-radius: 8px; /* Bordas arredondadas */
     cursor: pointer; /* Indica que é clicável */
+}
+
+.esqueci{
+   color: rgba(0, 0, 0, 0.4);
+   border: none;
+   background-color: #fff;
 }
 
 

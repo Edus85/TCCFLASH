@@ -47,7 +47,11 @@ if( !$con ){
             $pf = $usuario->insertUser($cnpj, $cpf, $nome, $datan, $endereco, $complemento, $telefone, $email, $senha, $razao, $fantasia, "2");
             
             if( $pf ){
-                $usuario->alerta("Prestador cadastrado com sucesso!");
+                echo "<script>
+                        confirm('Prestador cadastrado com sucesso!')
+                    </script>";
+
+                header("location: ../view/cadastraProduto.php");
             }else{
                 $usuario->alerta( "Erro ao cadastrar Prestador. Tente mais tarde!" );
             }
@@ -61,6 +65,8 @@ if( !$con ){
             $pj = $usuario->insertUser($cnpj, $cpf, $nome, $datan, $endereco, $complemento, $telefone, $email, $senha, $razao, $fantasia, "1");
             if( $pj ){
                 $usuario->alerta("Usuario cadastrado com sucesso!");
+                
+               
             }else{
                 $usuario->alerta( "Erro ao cadastrar Usuario. Tente mais tarde!" );
             }

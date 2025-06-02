@@ -1,22 +1,23 @@
 <?php
 session_start();
+
+
 require"..\model\Usuario.class.php";
 $con = $usuario = new Usuario();
+$email = $_POST['email'];
 
 if( !$con ){
     echo
     "<script>
         confirm('Nao consegui conectar ao banco')
     </script>";
-    return;
-}else{
+     
+}else{    
     if( isset($_POST['btnEntrar']) ){
         $email = $_POST['email'];
         $senha = $_POST['password'];
-
         $user = $usuario->checkUser($email);
-
-        if( $user ){
+        if( $user ){          
            $user = $usuario->checkPass($email, $senha);
            if( $user ){
                 if( !empty( $user['nome']) ){
@@ -31,5 +32,13 @@ if( !$con ){
         }else{
             $usuario->alerta("Usuario ou Prestador nao cadastrados");
         }
-    }
+    }else{
+        if( isset($_POST['btnEsqueci']) ){
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
+            $_SESSION['senha'] = $senha;
+            $_SESSION['email'] = $email;
+            header("location:../view/esqueci.php");
+        }
+    }   
 }

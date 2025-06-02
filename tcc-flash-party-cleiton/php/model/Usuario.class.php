@@ -1,4 +1,8 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+    
 
 /**
  * classe de conexao e CRUD com banco de dados contato. 
@@ -110,6 +114,11 @@ class Usuario{
 		$sql->bindValue(":y" , $email);
 		$sql->bindValue(":s" , $senha);
 		
+		$isOk = $sql->execute();
+
+		if ($isOk){
+			$_SESSION['user'] = $this->pdo->lastInsertId();
+		}
 		return $sql->execute();
 	}
 
@@ -143,6 +152,41 @@ class Usuario{
 
 	}
 
+	function atualizaSenha($email, $senha){
+	
+		$sql = "SELECT *FROM prestadores WHERE email = :e";
+		$sql = $this->pdo->prepare($sql);
+
+		$sql->bindValue(":e" , $email);
+
+		$sql->execute();
+
+		if($sql->rowCount() > 0){
+			$tabela = "usuarios";
+			$id     = $sql->id;
+		}else{
+			$sql = "SELECT *FROM usuarios WHERE email = :e";
+			$sql = $this->pdo->prepare($sql);
+
+			$sql->bindValue(":e" , $email);
+
+			$sql->execute();
+
+			if($sql->rowCount() > 0){
+				$id     = $sql->id;
+				$tabela = "prestadores";
+		}else{
+				return false;
+		}
+
+		$sql = "UPDATE $tabela SET senha = :s WHERE id = :i";
+		$sql->bindValue(":s", $senha);
+		$sql->bindValue(":i", $id);
+
+		$sql->execute();
+		session_destroy();
+	}
+		
 	function checkPass($email, $senha){	
 		$sql = "SELECT *FROM usuarios WHERE email = :e AND senha = :s";
 		$sql = $this->pdo->prepare($sql);
